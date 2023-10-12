@@ -1,5 +1,5 @@
 # tvpt2023_demo
-A demo app for Information and Communications Technology qualification made with React.js framework 
+A demo game where you have to guess the number for Information and Communications Technology qualification made with React.js framework.
 
 <br>
 
