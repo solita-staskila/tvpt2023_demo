@@ -1,31 +1,181 @@
 .App {
-  text-align: center;
+  font-family: 'silkscreen';
+  font-size: 15px;
+}
+
+body {
+  background-color: #09121D;
 }
 
 .App-logo {
-  height: 40vmin;
+  color: white;
+  height: 100px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
   pointer-events: none;
+  filter: saturate(3);
+  filter: contrast(160%);
+  filter: invert(100%);
+  filter: sepia(100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.guess {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.current {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 150px;
+  max-width: 16%;
+  max-height: 50px;
+  left: 20px;
+  position: relative;
+  bottom: 65px;
+  text-align: center;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.container {
+  top: calc(20px + 2vmin);
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: calc(20px + 2vmin);
+}
+
+.result-box {
+  background-color: white;
+  max-width: 30%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.result {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.styled-line {
+  background-color: white;
+  height: 6px;
+  top: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom {
+  position: relative;
+  top: 100px;
+  
+}
+
+.bottom .left {
+  float: left;
+  height: 200px;
+  width: 30%;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.userinput {
+  border-color: white;
+  border-radius: 1px;
+  border-style:solid;
+  height: 80px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0);
+
+  font-family: 'silkscreen';
+  font-size: 30px;
+  color: white;
+}
+
+.check {
+  background-color: white;
+  height: 50px;
+  width: 70%;
+  top: 20px;
+  font-size: 20px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+}
+
+.bottom .right {
+  font-size: 20px;
+  float: right;
+  height: 200px;
+  width: 30%;
+  text-align: left;
+  color: white;
+}
+
+.score {
+  position: relative;
+  top: 20px;
+}
+
+.highscore {
+  position: relative;
+  top: 10px;
+
+}
+
+.blinking-border {
+  border: 10px solid;
+  animation: blink-red-border 1s infinite;
+}
+
+.blinking-border-red {
+  width: 120px;
+  animation: blink-red 3s infinite;
+}
+
+.blinking-border-green {
+  width: 120px;
+  animation: blink-green 2s infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 2s linear;
+  }
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +185,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes blink-red {
+  50% { color: rgba(255, 0, 0, 1); }
+}
+
+@keyframes blink-green {
+  50% { color: rgba(0, 128, 0, 1); }
+}
+
+@keyframes blink-red-border {
+  0% { border-color: transparent; }
+  50% { border-color: rgba(255, 0, 0, 1); }
+  100% { border-color: transparent; }
 }
