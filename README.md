@@ -36,6 +36,62 @@ npm start
 
 <br>
 
+
+
+
+## Running the app with Visual Studio: 
+
+- Make sure either Docker or Node.js is successfully installed on your system
+- Open up Visual Studio, or go to File -> Start window
+- Select 'Clone a repository'
+<details>
+  <summary>[preview]</summary>
+  
+  ![screenshot](https://i.gyazo.com/689e135ab688100dc5921a96d48922a4.png)
+</details>
+
+- Input repository location: https://github.com/solita-staskila/tvpt2023_demo
+- Click 'Clone'
+<details>
+  <summary>[preview]</summary>
+  
+  ![screenshot](https://i.gyazo.com/b83fb74274d371d4ef7ab752d484e613.png)
+</details>
+
+- Open up a terminal (View -> Terminal)
+<details>
+  <summary>[preview]</summary>
+  
+  ![screenshot](https://i.gyazo.com/e29ed3a8e263e52d22f27dc5bad6ab05.png)
+</details>
+
+- Make sure your terminal is in the project root folder, if not, execute this command to navigate:
+```
+cd tvpt2023_demo
+```
+<details>
+  <summary>[preview]</summary>
+  
+  ![screenshot](https://i.gyazo.com/2983801649f268845d749ec680706b5d.png)
+</details>
+
+You can now run the app with Node or Docker.
+To run with docker, execute these commands:  
+```
+docker build -t demo-react-game .
+docker run -p 3000:3000 demo-react-game
+```
+To run the app with Node, execute:
+```
+npm install 
+npm start 
+```
+- Finally open up your browser and navigate to http://localhost:3000/
+
+<br>
+
+
+
 ## Screenshots:
 
 <details>
@@ -49,24 +105,3 @@ npm start
   
   ![screenshot](https://i.gyazo.com/2c6dd72337eb5a86d688fad3c0fd46a8.png)
 </details>
-
-### Running the app:
-
-<details>
-  <summary>1)</summary>
-  
-  ![screenshot](https://i.gyazo.com/a3c6ab5fc45f90fba33f44d362933ded.png)
-</details>
-
-<details>
-  <summary>2)</summary>
-  
-  ![screenshot](https://i.gyazo.com/80b8a3e04734d372798168a9542be4de.png)
-</details>
-
-<details>
-  <summary>3)</summary>
-  
-  ![screenshot](https://i.gyazo.com/bf92ea0bccfee6488b01d847499a0b8c.png)
-</details>
-
